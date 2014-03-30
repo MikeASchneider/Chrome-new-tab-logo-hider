@@ -1,0 +1,17 @@
+{
+  "name" : "New Tab page logo hider",
+  "version" : "0.1.0",
+  "description" : "Removes the logo on the Chrome new tab page",
+  "content_scripts" : [
+    {
+      "matches": [
+            "http://*/*",
+            "https://*/*"
+            ],
+      "js" : ["script.js" ],
+      "run_at" : "document_end",
+      "all_frames" : false
+    }
+  ],
+  "manifest_version": 2
+}
